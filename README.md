@@ -48,16 +48,16 @@ The script `download_chirps.py` downloads the daily CHIRPS `.tif.gz` files from 
    python download_chirps.py
    ```
 
-### **2. Calculating Centroids (For Precipitation Data Extraction)**
+### **2. Calculating Centroids (For Precipitation and Temp Data Extraction)**
 
-The centroids are calculated from the subbasin shapefile. The script `calculate_centroid_chirps.py` takes a shapefile of subbasins and calculates the centroids, saving them to a new shapefile.
+The centroids are calculated from the subbasin shapefile (created in QSWAT+). The script `calculate_centroid.py` takes a shapefile of subbasins and calculates the centroids, saving them to a new shapefile.
 
 #### Steps:
 1. Navigate to the `CHIRPS/02_Calculate_Centroid/` directory.
 2. Update the path to your subbasin shapefile in the script.
 3. Run the script to calculate the centroids:
    ```bash
-   python calculate_centroid_chirps.py
+   python calculate_centroid.py
    ```
 
 ### **3. Extracting Precipitation Data to SWAT Format**
